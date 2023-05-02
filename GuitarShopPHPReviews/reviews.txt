@@ -1,0 +1,1 @@
+a:4:{i:0;a:3:{i:0;s:3:"123";i:1;s:6:"HI all";i:2;s:1:"2";}i:1;a:3:{i:0;s:3:"345";i:1;s:17:"$buttonCount = 4;";i:2;s:1:"2";}i:2;a:3:{i:0;s:6:"andrew";i:1;s:152:"#Внешние ссылки запрещены# #Внешние ссылки запрещены# http://bsuir.by https://www.bsuir.by/ru/kafedry-bguir ";i:2;s:1:"1";}i:3;a:3:{i:0;s:9:"aresdfghj";i:1;s:7:"sdfghjk";i:2;s:1:"3";}}
