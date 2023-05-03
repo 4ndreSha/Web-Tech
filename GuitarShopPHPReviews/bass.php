@@ -8,16 +8,17 @@ $name = "RevOLite";
 //header
 $logo_img = "images/logo.png";
 $title = "Lya guitaristo!";
-$buttonCount = 4;
 $buttonData = array(
-    array("acoustic.php", "electric.php", "bass.php", "reviews.php"),
-    array('ACOUSTIC', 'ELECTRIC', 'BASS', 'REVIEWS')
+    array("acoustic.php", 'ACOUSTIC'),
+    array("electric.php", 'ELECTRIC'),
+    array("bass.php", 'BASS'),
+    array("reviews.php", 'REVIEWS')
 );
 $headerButtons = "";
-for($i = 0; $i < $buttonCount; $i++) {
+foreach ($buttonData as $value) {
     $button = file_get_contents('templates/header-button.html');
-    $button = str_replace('{link}', $buttonData[0][$i], $button);
-    $button = str_replace('{name}', $buttonData[1][$i], $button);
+    $button = str_replace('{link}', $value[0], $button);
+    $button = str_replace('{name}', $value[1], $button);
     $headerButtons .= $button;
 }
 

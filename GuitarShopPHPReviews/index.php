@@ -6,34 +6,33 @@ $style_file = "style/style.css";
 //header
 $logo_img = "images/logo.png";
 $title = "Lya guitaristo!";
-$buttonCount = 4;
 $buttonData = array(
-    array("acoustic.php", "electric.php", "bass.php", "reviews.php"),
-    array('ACOUSTIC', 'ELECTRIC', 'BASS', 'REVIEWS')
+    array("acoustic.php", 'ACOUSTIC'),
+    array("electric.php", 'ELECTRIC'),
+    array("bass.php", 'BASS'),
+    array("reviews.php", 'REVIEWS')
 );
 $headerButtons = "";
-for($i = 0; $i < $buttonCount; $i++) {
+foreach ($buttonData as $value) {
     $button = file_get_contents('templates/header-button.html');
-    $button = str_replace('{link}', $buttonData[0][$i], $button);
-    $button = str_replace('{name}', $buttonData[1][$i], $button);
+    $button = str_replace('{link}', $value[0], $button);
+    $button = str_replace('{name}', $value[1], $button);
     $headerButtons .= $button;
 }
 
 //guitar-shop-item
-$itemCount = 3;
 $itemData = array(
-    array("acoustic.php", "electric.php", "bass.php"),
-    array("Martin D-18E", "Fender Stratocaster", "RevOLite"), 
-    array("images/1.png", "images/2.png", "images/3.png"),
-    array("Изображение 1", "Изображение 2", "Изображение 3")
+    array("acoustic.php", "Martin D-18E", "images/1.png", "Изображение 1"),
+    array("electric.php", "Fender Stratocaster", "images/2.png", "Изображение 2"), 
+    array("bass.php", "RevOLite", "images/3.png", "Изображение 3")
 );
 $guitarGallery = "";
-for($i = 0; $i < $itemCount; $i++){
+foreach($itemData as $value) {
     $item = file_get_contents('templates/guitar-item.html');
-    $item = str_replace('{link}', $itemData[0][$i], $item);
-    $item = str_replace('{name}', $itemData[1][$i], $item);
-    $item = str_replace('{image}', $itemData[2][$i], $item);
-    $item = str_replace('{image-name}', $itemData[3][$i], $item);
+    $item = str_replace('{link}', $value[0], $item);
+    $item = str_replace('{name}', $value[1], $item);
+    $item = str_replace('{image}', $value[2], $item);
+    $item = str_replace('{image-name}', $value[3], $item);
     $guitarGallery .= $item;
 }
 
