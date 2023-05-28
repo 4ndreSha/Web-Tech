@@ -1,0 +1,507 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #382626;
+}
+
+
+/*Header*/
+header {
+    background-color: #4f2626;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.title {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.auth_button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.auth_button:hover {
+    background: #ffa86dce;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+header form input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button[type="submit"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/*Welcome section*/
+.welcome {
+    background: url("../images/background.jpg") no-repeat fixed top center;
+    background-size: 110%;
+}
+.welcome-text {
+    color: rgb(255, 255, 255);
+    padding-top: 80px;
+    padding-bottom: 220px;
+    text-align: center;
+}
+.welcome-hello {
+    text-transform: uppercase;
+    font-size: 72px;
+    font-family: "Myriad Pro Bold";
+}
+.welcome-description {
+    font-size: 32px;
+    font-family: "Georgia";
+    line-height: 45px;
+    padding-top: 0;
+}
+
+
+/*Guitar shop section*/
+.guitar-shop {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.guitar-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.guitar-gallery__image {
+    margin: 10px;
+    width: calc((100% - 40px) / 3);
+    position: relative;
+}
+
+.guitar-gallery__image img {
+    max-width: 100%;
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.product {
+    color: #333333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.product-image {
+    padding-top: 20px;
+    flex: 1;
+}
+
+.product-description {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/*Reviews section*/
+* {
+    box-sizing: border-box;
+}
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 14px;
+    min-height: 700px;
+}
+
+.review-item {
+    max-width: 865px;
+    width: 100%;
+    margin: 15px auto 15px;
+    background: #ffffff;
+    border-radius: 5px 5px 0 0;
+}
+
+.review-item .heading {
+    background: #eaa5a5;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 20px;
+}
+
+.review-item .heading .left {
+    float: left;
+}
+
+.review-item .heading .right {
+    float: right;
+    /*color: #f3eeec;*/
+    font-size: 16px;
+}
+
+.review-item .inner {
+    padding: 20px;
+    border-left: 2px solid #f6e7e7;
+    border-right: 2px solid #f6e7e7;
+    border-bottom: 2px solid #f6e7e7;
+}
+
+.review-item .buttons {
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.review-item .text {
+    width: 100%;
+    padding: 20px;
+    color: #504c4c;
+    background: #fff5f5;
+    /*border: 1px solid #231f20;*/
+}
+
+.send-form {
+    margin: 60px auto 15px;
+    width: 865px;
+    padding: 15px 0 0;
+    border-top: 2px solid #eaa5a5;
+}
+
+.send-form .heading {
+    color: #505050;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.send-form .form-group {
+    float: left;
+    min-height: 110px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.send-form .form-group input{
+    background: #fff5f5;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #eaa5a5;
+    font-size: 14px;
+    padding: 5px;
+}
+.send-form .form-group textarea{
+    background: #fff5f5;
+    resize: vertical;
+    width: 667px;
+    min-height: 120px;
+    border-radius: 5px;;
+    border: 1px solid #eaa5a5;
+    font-size: 14px;
+    padding: 10px;
+    font-family: Arial;
+}
+
+.send-form .form-group__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px auto 5px;
+}
+
+.send-form .action {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 140px;
+    text-align: center;
+}
+
+.send-form .action input{
+    background: #fff5f5;
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #eaa5a5;
+    font-size: 14px;
+    padding: 5px;
+    /*border: none;*/
+}
+
+.send-form .action button{
+    background: #53a853;
+    color: white;
+    width: 139px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 59px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Authentication page*/
+.authentication {
+    min-height: 700px;
+    background: url("../images/loginBG.jpg") no-repeat fixed top center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.authentication .form {
+    margin: 0 auto;
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #5b5b5b;
+}
+.authentication h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+}
+.authentication label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.authentication input[type="text"],
+.authentication input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.authentication .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.authentication input[type="submit"] {
+    background-color: #53a853;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.authentication input[type="submit"]:hover {
+    background-color: #428c42;
+}
+.warning {
+    margin-bottom: 10px;
+    color: red;
+}
+.success {
+    margin-bottom: 10px;
+    color: green;
+}
+.auth_switch {
+    align-self: center;
+    color: blue;
+}
+.auth_switch a{
+    text-decoration: none;
+}
+
+/*Footer*/
+footer {
+    background-color: #4f2626;
+    color: #888888;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    margin: 10px;
+}
+
+.footer-item img {
+    max-width: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    .guitar-gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .guitar-gallery__image {
+        margin-bottom: 20px;
+    }
+
+    .product-image {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    form {
+        margin-right: 20px;
+    }
+
+    .guitar-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .guitar-gallery__image {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .caption {
+        text-align: center;
+    }
+
+    .product-image {
+        flex: 1;
+    }
+
+    .product-container {
+        flex-direction: row;
+    }
+
+    .product-description {
+        flex: 2;
+        padding: 20px;
+    }
+}

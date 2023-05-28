@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title_page}</title>
+  <link rel="stylesheet" href={style_file}>
+</head>
+
+<body>
+
+{header}
+
+
+<section class="authentication">
+  <div class="form">
+
+      <h3>{head_title}</h3>
+      <form method="post" action="">
+          {reg_name}
+        
+          <label for="username">Логин:</label>
+          <input type="text" name="username" required>
+
+          <label for="password">Пароль:</label>
+          <input type="password" name="password" required>
+
+          {warning}
+
+          <div class="buttons">
+            <!-- <input type="submit" name="register" value="Зарегистрироваться">
+            <input type="submit" name="login" value="Войти"> -->
+            <div class="auth_switch"><a href={link}>{title}</a></div>
+            <input type="submit" name={b_name} value={b_value}>
+          </div>
+      </form>
+
+  </div>
+</section>
+
+
+{footer}
+
+</body>
+
+</html>

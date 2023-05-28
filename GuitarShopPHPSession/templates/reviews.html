@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title_page}</title>
+  <link rel="stylesheet" href={style_file}>
+</head>
+
+<body>
+
+{header}
+
+
+<section class="reviews">
+
+    {review-item}
+
+    <div class="send-form">
+        <div class="heading">Оставьте свой отзыв</div>
+        <form method="POST">
+            <div class="form-group">
+                <div class="form-group__item">
+                    <label for="message" class="form-label">Сообщение:</label>
+                    <textarea name="message" id="message" class="form-control" placeholder="Ваш отзыв..." required>{edit_text}</textarea>
+                </div>
+            </div>
+            <div class="action">
+                <div
+                <label for="rank" class="form-label">Оценка:</label>
+                <input type="text" name="rank" id="rank" class="form-control" placeholder="5..." value="{edit_rank}" required>
+                <button type="submit" name="new" class="form-submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+{footer}
+
+</body>
+
+</html>
